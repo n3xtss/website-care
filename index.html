@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Website Care Plans — Ongoing Maintenance for UK Small Businesses</title>
+<style>
+  :root {
+    --text: #1f2933;
+    --muted: #52606d;
+    --line: #e4e7eb;
+    --bg: #ffffff;
+    --soft: #f7f9fa;
+    --accent: #1d4ed8;
+    --accent-dark: #1e3a8a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.6;
+    font-size: 17px;
+  }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+
+  header { padding: 24px 0 8px; }
+  .brand { font-weight: 700; font-size: 15px; letter-spacing: 0.02em; }
+  .brand span { color: var(--muted); font-weight: 400; }
+
+  .hero { padding: 40px 0 32px; }
+  h1 {
+    font-size: clamp(1.7rem, 5vw, 2.4rem);
+    line-height: 1.2;
+    font-weight: 700;
+    max-width: 22ch;
+  }
+  .sub {
+    margin-top: 14px;
+    color: var(--muted);
+    font-size: clamp(1rem, 2.5vw, 1.15rem);
+    max-width: 60ch;
+  }
+  .hero-cta { margin-top: 24px; }
+
+  .btn {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+  .btn:hover { background: var(--accent-dark); }
+  .btn-outline {
+    background: transparent;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+  }
+  .btn-outline:hover { background: var(--soft); }
+
+  section { padding: 36px 0; border-top: 1px solid var(--line); }
+  h2 { font-size: 1.35rem; margin-bottom: 18px; }
+  p + p { margin-top: 10px; }
+
+  .plans {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+  }
+  .plan {
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 22px 20px;
+  }
+  .plan.featured { border-color: var(--accent); }
+  .plan h3 { font-size: 1.05rem; }
+  .price { font-size: 1.9rem; font-weight: 700; margin: 6px 0 2px; }
+  .price small { font-size: 0.9rem; font-weight: 400; color: var(--muted); }
+  .tagline { color: var(--muted); font-size: 0.92rem; min-height: 2.9em; }
+  .plan ul { list-style: none; margin: 14px 0 0; }
+  .plan li { padding: 5px 0 5px 22px; position: relative; font-size: 0.95rem; }
+  .plan li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: 700;
+  }
+  .note { margin-top: 14px; font-size: 0.9rem; color: var(--muted); }
+
+  .included { margin-top: 8px; }
+  .included ul { list-style: none; margin-top: 12px; }
+  .included li { padding: 6px 0 6px 24px; position: relative; }
+  .included li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--muted);
+  }
+
+  .faq details {
+    border-bottom: 1px solid var(--line);
+    padding: 14px 0;
+  }
+  .faq summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .faq details[open] summary { margin-bottom: 8px; }
+
+  .contact {
+    background: var(--soft);
+    border-top: 1px solid var(--line);
+    padding: 40px 0;
+  }
+  .contact h2 { margin-bottom: 8px; }
+  .contact p { max-width: 55ch; }
+  .contact .btn { margin-top: 18px; }
+
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 22px 0 40px;
+    font-size: 0.88rem;
+    color: var(--muted);
+  }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header>
+    <div class="brand">Care Plans <span>— website maintenance for UK small businesses</span></div>
+  </header>
+
+  <div class="hero">
+    <h1>Your website, kept updated, backed up and secure — without you having to think about it.</h1>
+    <p class="sub">I handle the routine work that keeps a site healthy: updates, backups, security checks and small content changes. Run by one person — a London-based IT professional with night-shift remote support experience and a Linux/Nginx background. No call centres, no long contracts.</p>
+    <p class="hero-cta">
+      <a class="btn" href="#plans">See the plans</a>
+      <a class="btn btn-outline" href="#contact">Ask a question</a>
+    </p>
+  </div>
+
+  <section id="plans">
+    <h2>Monthly care plans</h2>
+    <div class="plans">
+
+      <div class="plan">
+        <h3>Care Starter</h3>
+        <div class="price">£25<small>/mo</small></div>
+        <p class="tagline">For a simple brochure site or blog that needs the basics done reliably.</p>
+        <ul>
+          <li>Off-site backups (weekly)</li>
+          <li>Core &amp; plugin updates (monthly)</li>
+          <li>Uptime checks</li>
+          <li>Monthly summary email</li>
+        </ul>
+      </div>
+
+      <div class="plan featured">
+        <h3>Care Standard</h3>
+        <div class="price">£45<small>/mo</small></div>
+        <p class="tagline">The usual choice for a small business site that changes now and then.</p>
+        <ul>
+          <li>Everything in Starter</li>
+          <li>Backups + updates weekly</li>
+          <li>Security checks (malware scan, basic hardening)</li>
+          <li>Up to 1 hour of content changes / month</li>
+          <li>Email support — replies within 24h on off-days, 48h on shift days</li>
+        </ul>
+      </div>
+
+      <div class="plan">
+        <h3>Care Plus</h3>
+        <div class="price">£75<small>/mo</small></div>
+        <p class="tagline">For busier sites that want faster responses and more hands-on time.</p>
+        <ul>
+          <li>Everything in Standard</li>
+          <li>Backups + updates as needed (weekly minimum)</li>
+          <li>Up to 3 hours of changes / month</li>
+          <li>Staging site for testing major updates</li>
+          <li>Priority handling — first in the queue on every reply day</li>
+        </ul>
+      </div>
+
+    </div>
+    <p class="note">All prices exclude VAT. Not sure which fits? Tell me about your site and I'll give an honest recommendation — including "you don't need this yet" if that's the truth.</p>
+
+    <h2 style="margin-top:34px;">One-off jobs</h2>
+    <div class="plans">
+      <div class="plan">
+        <h3>Site Migration</h3>
+        <div class="price">£99 <small>one-off</small></div>
+        <p class="tagline">Move your WordPress or static site to a new host with minimal downtime. Includes moving files and database, DNS guidance, and a post-move check.</p>
+      </div>
+      <div class="plan">
+        <h3>Security Hardening</h3>
+        <div class="price">£149 <small>one-off</small></div>
+        <p class="tagline">A one-time review and clean-up: malware scan, removing unused plugins/users, SSL and header checks, and basic server-level hardening. You get a plain-English report of what was done.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>What's included on every plan</h2>
+    <div class="included">
+      <ul>
+        <li><strong>Backups:</strong> automatic off-site backups, tested periodically so a restore actually works.</li>
+        <li><strong>Updates:</strong> WordPress core, themes and plugins kept current — with a check that nothing breaks after updating.</li>
+        <li><strong>Security checks:</strong> malware scans, monitoring for suspicious logins, prompt patching of known vulnerabilities.</li>
+        <li><strong>Minor content changes:</strong> text edits, image swaps, new pages based on existing design — within your plan's monthly hours.</li>
+        <li><strong>A real person:</strong> you deal directly with me. I've worked nights doing remote IT support, so odd-hours problems don't faze me — replies may come from unusual time zones' worth of quiet hours, but they come.</li>
+        <li><strong>Plain reporting:</strong> a short monthly email: what was updated, what was found, what was changed. No dashboards you'll never log into.</li>
+      </ul>
+      <p class="note">Platform focus: WordPress, plus static sites and common Linux/Nginx setups. Not currently offering: e-commerce development, custom coding projects, or design work.</p>
+    </div>
+  </section>
+
+  <section class="faq">
+    <h2>FAQ</h2>
+    <details>
+      <summary>Is there a long contract?</summary>
+      <p>No. Plans are month to month. There's no minimum term and no cancellation fee — I'd rather earn the renewal than lock you in.</p>
+    </details>
+    <details>
+      <summary>How do I cancel?</summary>
+      <p>Just email me. No forms, no phone trees. You keep all backups and access details, and I'll help with a clean handover to your next person or provider if you want one.</p>
+    </details>
+    <details>
+      <summary>How quickly do you respond?</summary>
+      <p>I work a 4-on/4-off night-shift rota, so replies come within 24h on my off-days and within 48h on shift days. That's the honest promise on every plan — the Plus plan means your work is first in the queue on each reply day, not that I've invented a faster reply time. If your site is down or showing a security problem, it's treated as urgent on every plan and handled in my next reply window.</p>
+    </details>
+    <details>
+      <summary>Do you host my site?</summary>
+      <p>No — your site stays on your own hosting, in your name. That means you're never tied to me. If your host is a poor fit, I can recommend options and handle the move.</p>
+    </details>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Get in touch</h2>
+    <p>Tell me a bit about your site — what it's built with, where it's hosted, and what worries you. I'll reply with an honest assessment and a suggested plan (or no plan, if that's what I'd honestly advise). No pressure, no sales call.</p>
+    <p><strong>Email:</strong> <a href="mailto:cosminact97@gmail.com">cosminact97@gmail.com</a></p>
+    <p><a class="btn" href="mailto:cosminact97@gmail.com?subject=Website%20care%20plan%20enquiry">Email me about your site</a></p>
+  </section>
+
+  <footer>
+    <p>Sole-trader website maintenance side business, based in London, UK. Prices exclude VAT. This page describes the service offered; nothing here is a guarantee of specific outcomes such as uptime or zero security incidents.</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
